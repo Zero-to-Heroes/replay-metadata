@@ -101,6 +101,8 @@ export interface CardAnalysis {
 	mulligan: boolean;
 	kept: boolean;
 	drawnTurn: number | undefined;
+	playedTurn: number | undefined | null;
+	playedOnCurve: boolean;
 }
 
 export type StatGameFormatType = 'unknown' | 'all' | 'standard' | 'wild' | 'classic' | 'twist';
