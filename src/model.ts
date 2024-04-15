@@ -118,6 +118,7 @@ export type StatGameModeType =
 	| 'tavern-brawl'
 	| 'battlegrounds'
 	| 'battlegrounds-friendly'
+	| 'battlegrounds-duo'
 	| 'duels'
 	| 'mercenaries-ai-vs-ai'
 	| 'mercenaries-pve'
