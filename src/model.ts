@@ -7,6 +7,7 @@ export interface ReplayUploadMetadata {
 		readonly userName: string;
 	};
 	readonly game: {
+		readonly uniqueId: string;
 		readonly reviewId: string;
 		readonly replayKey: string;
 		readonly deckstring: string;
