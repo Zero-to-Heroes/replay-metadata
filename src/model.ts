@@ -5,6 +5,7 @@ export interface ReplayUploadMetadata {
 	readonly user: {
 		readonly userId: string;
 		readonly userName: string;
+		readonly isPremium: boolean;
 	};
 	readonly game: {
 		readonly uniqueId: string;
