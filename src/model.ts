@@ -17,6 +17,7 @@ export interface ReplayUploadMetadata {
 		readonly buildNumber: number;
 		readonly playerRank: string;
 		readonly newPlayerRank: string;
+		readonly seasonId: number;
 		readonly opponentRank: string;
 		readonly gameMode: StatGameModeType;
 		readonly gameFormat: StatGameFormatType;
