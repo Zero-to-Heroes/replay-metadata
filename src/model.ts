@@ -1,4 +1,4 @@
-import { BgsBoard, BgsHeroQuest, BgsPostMatchStats } from '@firestone-hs/hs-replay-xml-parser';
+import { BgsBoard, BgsHeroQuest, BgsHeroTrinket, BgsPostMatchStats } from '@firestone-hs/hs-replay-xml-parser';
 import { BnetRegion, Race } from '@firestone-hs/reference-data';
 
 export interface ReplayUploadMetadata {
@@ -43,10 +43,12 @@ export interface ReplayUploadMetadata {
 		readonly hasPrizes: boolean;
 		readonly hasSpells: boolean;
 		readonly hasQuests: boolean;
+		readonly hasTrinkets: boolean;
 		readonly hasAnomalies: boolean;
 		readonly bannedTribes: readonly Race[];
 		readonly availableTribes: readonly Race[];
 		readonly anomalies: readonly string[];
+		readonly trinkets: readonly BgsHeroTrinket[];
 		readonly mainPlayerId: number;
 		readonly heroQuests: readonly BgsHeroQuest[];
 		readonly finalComp: BgsBoard | null;
