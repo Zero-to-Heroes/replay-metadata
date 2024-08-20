@@ -49,6 +49,7 @@ export interface ReplayUploadMetadata {
 		readonly availableTribes: readonly Race[];
 		readonly anomalies: readonly string[];
 		readonly trinkets: readonly BgsHeroTrinket[];
+		readonly trinketsOffered: readonly string[];
 		readonly mainPlayerId: number;
 		readonly heroQuests: readonly BgsHeroQuest[];
 		readonly finalComp: BgsBoard | null;
