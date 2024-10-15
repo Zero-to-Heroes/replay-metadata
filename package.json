@@ -1,6 +1,6 @@
 {
 	"name": "@firestone-hs/replay-metadata",
-	"version": "0.0.68",
+	"version": "0.0.69",
 	"description": "",
 	"scripts": {
 		"publish-version": "rm -rf dist && tsc && rm -rf dist/node_modules && npm publish --access public"

@@ -47,6 +47,7 @@ export interface ReplayUploadMetadata {
 		readonly hasAnomalies: boolean;
 		readonly bannedTribes: readonly Race[];
 		readonly availableTribes: readonly Race[];
+		readonly heroesOffered: readonly string[];
 		readonly anomalies: readonly string[];
 		readonly trinkets: readonly BgsHeroTrinket[];
 		readonly trinketsOffered: readonly string[];
