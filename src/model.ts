@@ -53,6 +53,7 @@ export interface ReplayUploadMetadata {
 		readonly trinketsOffered: readonly string[];
 		readonly mainPlayerId: number;
 		readonly heroQuests: readonly BgsHeroQuest[];
+		readonly boardHistory: readonly BgsBoardLight[];
 		readonly finalComp: BgsBoard | null;
 		readonly isPerfectGame: boolean;
 		readonly battleOdds: readonly { turn: number; wonPercent: number }[] | null;
@@ -94,6 +95,16 @@ export interface ReplayUploadMetadata {
 		readonly normalizedXpGained: number | undefined;
 		readonly levelAfterMatch: string;
 	};
+}
+
+export interface BgsBoardLight {
+	readonly turn: number;
+	readonly board: readonly EntityLight[];
+}
+export interface EntityLight {
+	readonly id: number;
+	readonly cardID: string;
+	readonly tags: { [tag: string]: number };
 }
 
 export interface MatchAnalysis {
