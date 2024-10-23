@@ -83,7 +83,9 @@ export interface ReplayUploadMetadata {
 	readonly stats: {
 		readonly matchAnalysis: MatchAnalysis | null;
 		readonly playerPlayedCards: readonly string[];
+		readonly playerPlayedCardsByTurn: readonly CardPlayedByTurn[];
 		readonly opponentPlayedCards: readonly string[];
+		readonly opponentPlayedCardsByTurn: readonly CardPlayedByTurn[];
 	};
 	readonly meta: {
 		readonly application: string;
@@ -121,6 +123,11 @@ export interface CardAnalysis {
 	drawnTurn: number | undefined;
 	playedTurn: number | undefined | null;
 	playedOnCurve: boolean;
+}
+
+export interface CardPlayedByTurn {
+	readonly turn: number;
+	readonly cardId: string;
 }
 
 export type StatGameFormatType = 'unknown' | 'all' | 'standard' | 'wild' | 'classic' | 'twist';
