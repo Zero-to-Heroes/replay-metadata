@@ -111,6 +111,7 @@ export interface EntityLight {
 
 export interface MatchAnalysis {
 	readonly cardsAnalysis: readonly CardAnalysis[];
+	readonly cardsBeforeMulligan: readonly string[];
 	readonly cardsAfterMulligan: { cardId: string; kept: boolean }[];
 	readonly cardsDrawn: { cardId: string; cardDbfId: number; turn: number }[];
 }
