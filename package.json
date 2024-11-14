@@ -1,6 +1,6 @@
 {
 	"name": "@firestone-hs/replay-metadata",
-	"version": "0.0.73",
+	"version": "0.0.74",
 	"description": "",
 	"scripts": {
 		"publish-version": "rm -rf dist && tsc && rm -rf dist/node_modules && npm publish --access public"
@@ -15,7 +15,7 @@
 		"dist/**/*"
 	],
 	"dependencies": {
-		"@firestone-hs/hs-replay-xml-parser": "^0.0.137",
+		"@firestone-hs/hs-replay-xml-parser": "^0.0.147",
 		"@firestone-hs/reference-data": "^0.1.196"
 	},
 	"devDependencies": {

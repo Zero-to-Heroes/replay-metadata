@@ -129,6 +129,7 @@ export interface CardAnalysis {
 export interface CardPlayedByTurn {
 	readonly turn: number;
 	readonly cardId: string;
+	readonly createdBy: string;
 }
 
 export type StatGameFormatType = 'unknown' | 'all' | 'standard' | 'wild' | 'classic' | 'twist';
