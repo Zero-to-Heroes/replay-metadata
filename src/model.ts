@@ -114,6 +114,12 @@ export interface MatchAnalysis {
 	readonly cardsBeforeMulligan: readonly string[];
 	readonly cardsAfterMulligan: { cardId: string; kept: boolean }[];
 	readonly cardsDrawn: { cardId: string; cardDbfId: number; turn: number }[];
+	readonly cardsDiscovered: {
+		cardId: string;
+		cardDbfId: number;
+		turn: number;
+		sourceCardId: string;
+	}[];
 }
 
 export interface CardAnalysis {
@@ -129,7 +135,7 @@ export interface CardAnalysis {
 export interface CardPlayedByTurn {
 	readonly turn: number;
 	readonly cardId: string;
-	readonly createdBy: string;
+	readonly createdBy: string | null;
 }
 
 export type StatGameFormatType = 'unknown' | 'all' | 'standard' | 'wild' | 'classic' | 'twist';
