@@ -143,6 +143,9 @@ export type StatGameModeType =
 	| 'unknown'
 	| 'arena'
 	| 'arena-draft'
+	// Distinguish between the old and new arena modes
+	| 'arena-underground'
+	| 'arena-underground-draft'
 	| 'casual'
 	| 'friendly'
 	| 'practice'
