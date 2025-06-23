@@ -84,8 +84,10 @@ export interface ReplayUploadMetadata {
 		readonly matchAnalysis: MatchAnalysis | null;
 		readonly playerPlayedCards: readonly string[];
 		readonly playerPlayedCardsByTurn: readonly CardPlayedByTurn[];
+		readonly playerCastCardsByTurn: readonly CardPlayedByTurn[];
 		readonly opponentPlayedCards: readonly string[];
 		readonly opponentPlayedCardsByTurn: readonly CardPlayedByTurn[];
+		readonly opponentCastCardsByTurn: readonly CardPlayedByTurn[];
 	};
 	readonly meta: {
 		readonly application: string;
