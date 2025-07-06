@@ -55,6 +55,7 @@ export interface ReplayUploadMetadata {
 		readonly heroQuests: readonly BgsHeroQuest[];
 		readonly boardHistory: readonly BgsBoardLight[];
 		readonly finalComp: BgsBoard | null;
+		readonly compArchetype: string | null;
 		readonly isPerfectGame: boolean;
 		readonly battleOdds: readonly { turn: number; wonPercent: number }[] | null;
 		readonly warbandStats: readonly { turn: number; totalStats: number }[] | null;
